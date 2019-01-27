@@ -1,0 +1,2 @@
+# Avoiding Common Attacks #
+My approach to avoiding common attacks was to keep things simple. The Existence contract does not handle user's ether, so this alone disqualifies many attacks including most of the well known attacks like reentrency and race conditions attacks. The user is not able to update any integers so interger underflow/overflow attacks are out of the question. Users are only allowed to add hashes of 46 characters, which is the length of IPFS hashes. 
